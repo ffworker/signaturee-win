@@ -92,4 +92,4 @@ node .\backend\server.js --check
 
 [Data sources and workflow limits](data-sources.md) explains why a CSV worklist in **Generieren** still requires live AD; the older full-file generation mode is a separate compatibility path.
 
-[Quickstart](../README.md#quickstart--standard-ad-deployment) · [Templates](templates.md) · [AD onboarding](ad-onboarding.md) · [SMB permissions](network-share-permissions.md)
+[Quickstart](../README.md) · [Templates](templates.md) · [AD onboarding](ad-onboarding.md) · [SMB permissions](network-share-permissions.md)
