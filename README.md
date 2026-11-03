@@ -1,6 +1,6 @@
 # Signaturee
 
-[![Windows quality gate](https://github.com/ffworker/Signaturee-public/actions/workflows/quality-gate.yml/badge.svg)](https://github.com/ffworker/Signaturee-public/actions/workflows/quality-gate.yml) · [MIT License](LICENSE)
+[![Windows quality gate](https://github.com/ffworker/signaturee-win/actions/workflows/quality-gate.yml/badge.svg)](https://github.com/ffworker/signaturee-win/actions/workflows/quality-gate.yml) · [MIT License](LICENSE)
 
 **Email signature generation and deployment for IT administrators.** Use employee data, existing HTML/TXT templates and configurable signature assignments to generate consistent signatures without setting them up one mailbox at a time.
 
@@ -43,14 +43,14 @@ For a clean Windows Server 2025 VM or first-time release qualification, start wi
 
 ## Linux / Docker status — under development
 
-The published [v2.0.0 release](https://github.com/ffworker/Signaturee-public/releases/tag/v2.0.0) is **Windows-only**. The independent [signaturee-linux](https://github.com/ffworker/signaturee-linux) project is a Docker-first experimental implementation with offline generation, LibreOffice conversion, CLI workflows and a limited unauthenticated development UI. Real LDAP acceptance and the full authenticated Linux UI are still pending. The Windows generator is **not Linux-ready** simply because its backend can start on Linux. See the [actual cross-repository frontend/API assessment](docs/linux-reuse-boundary.md) and [Windows release baseline audit](docs/release-baseline-frontend-audit.md); no frontend migration is included here.
+The published [v2.0.1 release](https://github.com/ffworker/signaturee-win/releases/tag/v2.0.1) is **Windows-only**. The Windows edition is in active production use in one workplace setting, according to the maintainer; the exact version deployed there has not been independently verified. Other environments require their own AD, SMB and Classic Outlook acceptance. The independent [signaturee-linux](https://github.com/ffworker/signaturee-linux) project is a Docker-first experimental implementation with offline generation, LibreOffice conversion, CLI workflows and a limited unauthenticated development UI. Real LDAP acceptance and the full authenticated Linux UI are still pending. The Windows generator is **not Linux-ready** simply because its backend can start on Linux. See the [actual cross-repository frontend/API assessment](docs/linux-reuse-boundary.md) and [Windows release baseline audit](docs/release-baseline-frontend-audit.md); no frontend migration is included here.
 
 ## Quickstart — standard AD deployment
 
 Run PowerShell **as Administrator** on the intended Signaturee host:
 
 ```powershell
-git clone https://github.com/ffworker/Signaturee-public.git C:\Signaturee
+git clone https://github.com/ffworker/signaturee-win.git C:\Signaturee
 cd C:\Signaturee
 npm ci --omit=dev
 
