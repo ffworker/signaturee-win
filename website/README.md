@@ -22,10 +22,10 @@ an application route.
 
 - Windows is the available edition; Linux is an independent experimental project.
 - Classic Outlook local signature files are not native new Outlook/web deployment.
-- All download links name the existing published v2.0.0 release, not `latest`, a
+- All download links name the existing published v2.0.1 release, not `latest`, a
   moving branch or an ordinary CI artifact. The ZIP and SHA256SUMS were downloaded
   and checked during this website mission. See the baseline audit for evidence.
-- Creator acceptance is explicitly attributed, not presented as customer validation.
+- Maintainer-reported workplace production use is explicitly attributed, not presented as independent customer certification. The installed production version is not independently confirmed.
 - The signature specimen uses the owner's fictional Max Mustermann data, explicitly labeled as a
   template illustration, never a real employee or product screenshot.
 - No screenshots are used because no approved sanitized capture was supplied.
