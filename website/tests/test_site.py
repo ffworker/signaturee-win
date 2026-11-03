@@ -78,8 +78,8 @@ class SiteTests(unittest.TestCase):
     def test_downloads_name_existing_release(self):
         downloads = [a for a in self.page.links if '/releases/download/' in a]
         self.assertEqual(set(downloads), {
-            'https://github.com/ffworker/Signaturee-public/releases/download/v2.0.0/signaturee-win-v2.0.0.zip',
-            'https://github.com/ffworker/Signaturee-public/releases/download/v2.0.0/SHA256SUMS.txt',
+            'https://github.com/ffworker/signaturee-win/releases/download/v2.0.1/signaturee-win-v2.0.1.zip',
+            'https://github.com/ffworker/signaturee-win/releases/download/v2.0.1/SHA256SUMS.txt',
         })
         self.assertNotIn('/releases/latest', self.html)
         self.assertNotIn('/actions/artifacts/', self.html)
@@ -95,6 +95,11 @@ class SiteTests(unittest.TestCase):
         self.assertIn('https://github.com/ffworker/signaturee-linux', self.page.links)
         self.assertIn('Real LDAP acceptance', self.html)
         self.assertIn('not automatic stable releases', self.html)
+        self.assertIn('The Windows edition is in production use in one workplace setting', self.html)
+        self.assertIn('as reported by its maintainer', self.html)
+        self.assertIn('the installed version has not been independently verified', self.html)
+        self.assertNotIn('Signaturee-public', self.html)
+        self.assertNotIn('v2.0.0', self.html)
 
     def test_editorial_specimen_and_honest_ai_disclosure(self):
         self.assertIn('Fictional signature', self.html)
