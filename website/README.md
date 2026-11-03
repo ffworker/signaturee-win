@@ -23,8 +23,11 @@ an application route.
 - Windows is the available edition; Linux is an independent experimental project.
 - Classic Outlook local signature files are not native new Outlook/web deployment.
 - All download links name the existing published v2.0.1 release, not `latest`, a
-  moving branch or an ordinary CI artifact. The ZIP and SHA256SUMS were downloaded
-  and checked during this website mission. See the baseline audit for evidence.
+  moving branch or an ordinary CI artifact. Release v2.0.1 metadata confirms
+  that the ZIP and SHA256SUMS.txt assets were published on GitHub. This website
+  refresh did not independently download or re-hash the ZIP against SHA256SUMS;
+  perform that verification before the live promotion. The older baseline audit
+  documents the original v2.0.0 website mission, not this updated asset.
 - Maintainer-reported workplace production use is explicitly attributed, not presented as independent customer certification. The installed production version is not independently confirmed.
 - The signature specimen uses the owner's fictional Max Mustermann data, explicitly labeled as a
   template illustration, never a real employee or product screenshot.
