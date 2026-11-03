@@ -1,6 +1,6 @@
 # Changelog
 
-## 2.0.1 — UI improvements (unreleased)
+## 2.0.1 — UI improvements (released 2026-10-30)
 
 ### Improved
 
@@ -22,7 +22,7 @@
 - No authentication, permission, API or directory-contract changes. Existing signature templates and generated formatting are retained; previews remain isolated from application styling.
 - No production dependency additions. The independent experimental Linux edition is unchanged.
 - Local Node tests and Chromium frontend workflows pass. Browser coverage uses explicitly fictional, loopback-only API fixtures, including both themes, mobile layouts, expanded editors and generated-result states.
-- This entry describes prepared source changes, not a published release. Exact-revision Windows CI, package checks and manual Windows/AD/Classic Outlook acceptance are required before stable publication; see [the release procedure](docs/windows-release.md).
+- Stable Windows release v2.0.1 was published on 2026-10-30 from commit `8392bcfba8f30cd524b3a900e5937231ab8c1b45`. Check the [published release](https://github.com/ffworker/signaturee-win/releases/tag/v2.0.1), its packaged checksum and [release procedure](docs/windows-release.md). Every new installation still requires local Windows/AD/SMB/Classic Outlook acceptance.
 
 ## 2.0.0
 
