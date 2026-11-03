@@ -1,5 +1,7 @@
 # Signaturee
 
+**Project:** [Signaturee website](https://signaturee.bytegeist.dev/) · [Bytegeist Blog: How Signaturee started (001)](https://blog.bytegeist.dev/artikel/signaturee/)
+
 [![Windows quality gate](https://github.com/ffworker/signaturee-win/actions/workflows/quality-gate.yml/badge.svg)](https://github.com/ffworker/signaturee-win/actions/workflows/quality-gate.yml) · [MIT License](LICENSE)
 
 **Email signature generation and deployment for IT administrators.** Use employee data, existing HTML/TXT templates and configurable signature assignments to generate consistent signatures without setting them up one mailbox at a time.
